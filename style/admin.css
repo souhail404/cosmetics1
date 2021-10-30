@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    position: relative; 
+    background-color: rgb(224, 224, 224);
+    max-width: 1700px;
+    min-width: 280px;
+    margin: auto;
+
+}
+
+/* nav styling start */
+
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 11px 0;
+    border-bottom: solid 1px #80808066;
+    background-color: rgb(255, 255, 255);
+}
+nav ul{
+    
+    padding: 5px 0;
+    list-style-type:none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    cursor: pointer;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #00b6b6;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 20px;
+}
+/* nav styling end */
+
+/* footer styling start */
+footer{
+    position: absolute;
+    bottom: 0;
+    padding: 16px 0;
+    border-top:solid 1px rgba(128, 128, 128, 0.1);
+    width: 100%;
+    background-color: #00b6b6;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+footer p{
+     color: white;
+}
+footer p a{
+    color: white;
+    text-decoration: underline;
+}
+/* footer styling end */
+
+/* main styling start */
+.main-container{
+    width: 100%;
+    padding: 80px 50px;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    flex-direction: column;
+   
+}
+.main-container h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-container .cardss {
+    margin-top: 40px;
+}
+.main-container .cardss p{
+    font-size: 1.4rem;
+}
+/* main styling end */
+
+/* table styling start*/
+form{
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+form table{
+    width: 98%;
+    display: flex;
+}
+form td{
+    padding: 8px 0;
+}
+
+
+
+table{
+    margin-top:20px;
+}
+.table-admin{
+    background-color: tomato;
+}
+.table-admin tr{
+    
+    background-color: rgb(216, 216, 216);
+}
+.table-admin tr th{
+    padding: 6px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: rgb(177, 177, 177);
+}
+.table-admin tr td{
+    padding: 6px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: rgb(216, 216, 216);
+}
+
+.table-admin td a{
+    padding: 4px 10px;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+.table-admin td .del{
+    background-color: rgba(240, 46, 85, 0.6);
+}
+.table-admin td .upd{
+    background-color: rgba(46, 240, 120, 0.6);
+}
+.table-admin td .upd2{
+    background-color: rgba(41, 184, 240, 0.6);
+}
+.table-admin td .upd2:hover{
+    background-color: rgba(0, 140, 195, 0.6);
+}
+.table-admin td .del:hover{
+    background-color: rgba(240, 46, 85, 0.8);
+}
+.table-admin td .upd:hover{
+    background-color: rgba(46, 240, 120, 0.9);
+}
+/* table styling end*/
+
+
+/* add button styling start*/
+.add{
+    width: 150px;
+    margin-top:20px;
+    padding: 10px 0;
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(10, 216, 216);
+    border-radius: 2px;
+    cursor: pointer;
+}
+.add:hover{
+    background-color: rgb(10, 243, 243);
+}
+/* add button styling end*/
+
+.scc-message{
+    color:green; 
+    margin-top:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 999;
+}
+.fail-message{
+    color:rgb(199, 0, 0); 
+    margin-top:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 99;
+}
+.cancel{
+    background-color: #ff4757;
+    margin-left:20px;
+    padding: 9px 20px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* css for login page */
+
+.login-page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.login-page p{
+    width: 100%;
+    background-color: #00b6b6;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    display: none;
+}
+.login-page .loging-form{
+    margin-top: 140px;
+    width: 500px;
+    height: 350px;
+    background-color: #ebebeb;
+    box-shadow: 5px 5px 20px rgb(133, 133, 133);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.login-page .loging-form input{
+    height: 30px;
+    margin-bottom: 40px;
+    font-size: 1.2rem
+}
+.login-page .loging-form label{
+    margin-bottom: 10px;
+    font-size: 1.2rem
+}
+.login-page h1{
+    position: absolute;
+    top: 50px;
+}
+
+@media (max-width:850px) {
+    
+    .table-admin tr td{
+        padding: 6px 2px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.9rem;
+        text-align: center;
+        background-color: rgb(216, 216, 216);
+        height: 60px;
+    }
+    .table-admin tr .spcl-td{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding:0 10px;
+    }
+    .table-admin tr .spcl-td-admin{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding:0 5px;
+        height: 100px;
+    }
+}
+
+
+@media (max-width:500px) {
+    .cancel{
+        background-color: #ff4757;
+        margin-left:10px;
+        padding: 7px 10px;
+        
+    }
+    .add{
+        width: 100px;
+        margin-top:18px;
+        padding: 8px 0;
+        
+    }
+    .main-container{
+        padding: 80px 20px;
+        
+    }
+    .main-container h1{
+       width: 100%;
+       text-align: center;
+    }
+    .table-admin tr th{
+        padding: 4px 0;
+        
+        font-size: 0.7rem;
+    }
+    
+}
+@media (max-width:450px) {
+
+    nav ul{     
+        padding: 5px 0;
+    }
+    nav ul li a{
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    }
+
+}
+@media (max-width:450px) {
+    .table-admin td a{
+        padding: 4px 5px;
+        font-size: 0.7rem;
+    }
+    .table-admin tr td{
+        padding: 4px 0;
+        
+        font-size: 0.65rem;
+    }
+    
+}
+@media (max-width:400px) {
+    form tr{
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       padding: 10px 0;
+    }
+    form td{
+       padding: 4px;
+        
+     }
+}
+@media (max-width:350px) {
+
+    nav ul{     
+        padding: 5px 0;
+    }
+    nav ul li a{
+        padding: 5px 5px;
+        font-size: 0.9rem;
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+        padding: 16px 0;
+        border-top:solid 1px rgba(128, 128, 128, 0.1);
+        width: 100%;
+        background-color: #00b6b6;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    footer p{
+         font-size: 0.8rem;
+    }
+
+}

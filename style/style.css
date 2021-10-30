@@ -1,0 +1,1029 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'tajawal' ,sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    max-width: 1400px;
+    min-width: 280px;
+    margin: auto;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+/* -------------------------------------------------------------------------- */
+/* NAVIGATION BAR STYLING */
+
+nav{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+}
+nav .nav-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    background-color: #000000;
+    box-shadow:  0px 5px 5px rgba(0, 0, 0, 0.105);
+}
+nav .nav-container p{
+    font-weight: 500px;
+    color: white;
+    padding: 10px 0;
+    font-size: 1.3rem;
+}
+nav .nav-container .logo p{
+     color: #000000;
+     font-size: 1.6rem;
+     font-weight: 700;
+     font-family: 'poppins' ,sans-serif;
+}
+nav .nav-container ul{
+    display: flex;
+    margin-right: 6%;
+}
+nav .nav-container ul li a{
+    padding:0 20px;
+    color: black;
+    font-weight: 500;
+    border-left: solid 1px rgba(0, 0, 0, 0.26);
+}
+/* NAVIGATION BAR STYLING ENDS */
+/* ---------------------------------------------------------------- */
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* PRODUCT SECTION STYLING START */
+.product-section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    padding-top: 90px;
+    padding-bottom:40px ;
+    background: url(../media/286.png);
+    background-position: center;
+    background-position-x: left;
+    background-position-y: bottom;
+    background-size: cover;
+    
+}
+.product-section .prd-sec-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.product-section .prd-sec-container .left{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 5px;
+    padding-left:5px ;    
+    padding-right: 10%;
+}
+.product-section .prd-sec-container .left h3{
+    font-size: 2.3rem;
+    text-align: end;    
+    margin-bottom: 10px;
+}
+.product-section .prd-sec-container .left p{
+    font-size:1.1rem;
+    text-align: end;    
+    margin-bottom: 10px;
+}
+.product-section .prd-sec-container .left .price{
+    font-size: 1.9rem;  
+    font-weight: 700;
+}
+.product-section .prd-sec-container .left .price .rl-price{
+    font-size: 1.9rem;  
+    font-weight: 700;
+}
+.product-section .prd-sec-container .left .price .fx-price{
+    font-size: 1.15rem; 
+    text-decoration: line-through; 
+    font-weight: 500;
+}
+.product-section .prd-sec-container .left .stars{
+    font-size: 1.2rem;  
+    color: rgb(196, 136, 15);
+}
+.product-section .prd-sec-container .left .stars a{
+    font-size: 0.95rem;  
+    color: rgb(0, 0, 0);
+}
+.product-section .prd-sec-container .left .stars a:hover{
+    text-decoration: underline;
+}
+.product-section .prd-sec-container .left .order{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.product-section .prd-sec-container .left .order a{
+    padding: 4px 48px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border:solid 2px black;
+    transition: all 0.3s ease;
+}
+.product-section .prd-sec-container .left .order a:hover{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+.product-section .prd-sec-container .right{
+    width: 48%; 
+    display: flex;
+    justify-content: center;
+}
+.product-section .prd-sec-container .right img{
+    width: 320px; 
+    /* box-shadow: 5px 5px 10px #cacaca; */
+}
+.product-section .prd-sec-container .phone-title{
+    display: none;
+    font-size: 2.3rem;
+    text-align: end;    
+    margin-bottom: 10px;
+}
+
+@media (max-width:900px) {
+    .product-section .prd-sec-container .left{
+        padding-right: 7%;
+    }
+    .product-section .prd-sec-container .left h3{
+        font-size: 2.15rem; 
+        margin-bottom: 8px;
+    }
+    .product-section .prd-sec-container .left p{
+        font-size:1rem;   
+        margin-bottom: 8px;
+    }
+
+    .product-section .prd-sec-container .left .price .rl-price{
+        font-size: 1.75rem;  
+    }
+    .product-section .prd-sec-container .left .price .fx-price{
+        font-size: 1.15rem; 
+    }
+    .product-section .prd-sec-container .left .stars{
+        font-size: 1.2rem;  
+    }
+    .product-section .prd-sec-container .left .stars a{
+        font-size: 0.95rem;  
+    }
+    .product-section .prd-sec-container .left .order a{
+        padding: 4px 48px;
+        font-size: 1.2rem;
+
+    }
+    .product-section .prd-sec-container .right{
+        width: 48%; 
+        display: flex;
+        justify-content: center;
+    }
+    .product-section .prd-sec-container .right img{
+        width: 295px; 
+    }
+}
+@media (max-width:800px) {
+    .product-section{
+
+        height: 540px;
+        
+    }
+    .product-section .prd-sec-container .left{
+        padding-right: 4%;
+    }
+    .product-section .prd-sec-container .left h3{
+        font-size: 2rem; 
+        margin-bottom: 8px;
+    }
+    .product-section .prd-sec-container .left p{
+        font-size:0.9rem;   
+        margin-bottom: 8px;
+    }
+
+    .product-section .prd-sec-container .left .price .rl-price{
+        font-size: 1.65rem;  
+    }
+    .product-section .prd-sec-container .left .price .fx-price{
+        font-size: 1.15rem; 
+    }
+    .product-section .prd-sec-container .left .stars{
+        font-size: 1.2rem;  
+    }
+    .product-section .prd-sec-container .left .stars a{
+        font-size: 0.95rem;  
+    }
+    .product-section .prd-sec-container .left .order a{
+        padding: 4px 48px;
+        font-size: 1.2rem;
+
+    }
+    .product-section .prd-sec-container .right{
+        position: relative;
+    }
+    .product-section .prd-sec-container .right img{
+        width: 255px; 
+    }
+}
+@media (max-width:700px) {
+    .product-section{
+        height: 480px;   
+    }
+    .product-section .prd-sec-container .left{
+        padding-right: 3%;
+    }
+    .product-section .prd-sec-container .left h3{
+        font-size: 1.8rem; 
+        margin-bottom: 8px;
+    }
+    .product-section .prd-sec-container .left p{
+        font-size:0.85rem;   
+        margin-bottom: 8px;
+    }
+
+    .product-section .prd-sec-container .left .price .rl-price{
+        font-size: 1.45rem;  
+    }
+    .product-section .prd-sec-container .left .price .fx-price{
+        font-size: 1rem; 
+    }
+    .product-section .prd-sec-container .left .stars{
+        font-size: 1.15rem;  
+    }
+    .product-section .prd-sec-container .left .stars a{
+        font-size: 0.85rem;  
+    }
+    .product-section .prd-sec-container .left .order a{
+        padding: 4px 48px;
+        font-size: 1.05rem;
+
+    }
+    .product-section .prd-sec-container .right{
+        position: relative;
+    }
+    .product-section .prd-sec-container .right img{
+        width: 200px; 
+        
+    }
+}
+
+@media (max-width:580px) {
+    .product-section{
+        height: 700px;   
+    }
+    .product-section .prd-sec-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .product-section .prd-sec-container .left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 10px;
+        padding-left:10px ;    
+        padding-right: 2%;
+        margin-top: 20px;
+    }
+    .product-section .prd-sec-container .left h3{
+        font-size: 1.7rem;
+        text-align: end;    
+        margin-bottom: 5px;
+        display: none;
+    }
+    .product-section .prd-sec-container .left p{
+        font-size:1rem;
+        text-align: center;    
+        margin-bottom: 5px;
+    }
+    .product-section .prd-sec-container .left .price .rl-price{
+        font-size: 1.5rem;  
+        font-weight: 700;
+    }
+    .product-section .prd-sec-container .left .price .fx-price{
+        font-size: 1.05rem; 
+        text-decoration: line-through; 
+        font-weight: 500;
+    }
+    .product-section .prd-sec-container .left .stars{
+        font-size: 1.2rem;  
+    }
+    .product-section .prd-sec-container .left .stars a{
+        font-size: 0.95rem;  
+    }
+    .product-section .prd-sec-container .left .order{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .product-section .prd-sec-container .left .order a{
+        padding: 4px 48px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-radius: 5px;
+        border:solid 2px black;
+        transition: all 0.3s ease;
+    }
+    .product-section .prd-sec-container .left .order a:hover{
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+    }
+    .product-section .prd-sec-container .right{
+        width: 100%; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .product-section .prd-sec-container .right img{
+        width: 220px; 
+    }
+    .product-section .prd-sec-container .phone-title{
+        display: flex;
+        font-size: 2.2rem;  
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:350px) {
+    .product-section .prd-sec-container .phone-title{
+        display: flex;
+        font-size: 1.85rem;  
+        margin-bottom: 30px;
+
+    }
+
+}
+/* PRODUCT SECTION STYLING END */
+/* ---------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------- */
+/* HOW TO USE SECTION STYLING START */
+
+.how-to-use{
+    width:100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.how-to-use .how-to-use-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.how-to-use .how-to-use-container .section-header h4{
+    font-size: 2.3rem;    
+    margin-bottom: 10px;
+}
+.how-to-use .how-to-use-container  .content{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.how-to-use .how-to-use-container  .content .card{
+    width:250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 8px;
+}
+.how-to-use .how-to-use-container  .content .card img{
+    width:250px;
+    height:250px;
+    margin-bottom: 6px;
+}
+.how-to-use .how-to-use-container  .content .card h5{
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 6px;
+}
+.how-to-use .how-to-use-container  .content .card p{
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.how-to-use .how-to-use-container .order-btn a{
+    padding: 4px 48px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border:solid 2px black;
+    transition: all 0.3s ease;
+}
+.how-to-use .how-to-use-container .order-btn a:hover{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width:900px) {
+    .how-to-use .how-to-use-container .section-header h4{
+        font-size: 2.3rem;    
+    }
+    .how-to-use .how-to-use-container  .content{
+        width: 90%;
+
+    }
+    .how-to-use .how-to-use-container  .content .card{
+        width:200px;
+        padding-bottom: 8px;
+    }
+    .how-to-use .how-to-use-container  .content .card img{
+        width:200px;
+        height:200px;
+        margin-bottom: 6px;
+    }
+    .how-to-use .how-to-use-container  .content .card h5{
+        font-size: 1.3rem;
+        margin-bottom: 0px;
+    }
+    .how-to-use .how-to-use-container  .content .card p{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    .how-to-use .how-to-use-container .order-btn a{
+        padding: 4px 48px;
+        font-size: 1.2rem;
+       
+    }
+}
+@media (max-width:750px) {
+    .how-to-use .how-to-use-container .section-header h4{
+        font-size: 2.2rem;    
+    }
+    .how-to-use .how-to-use-container  .content{
+        width: 100%;
+
+    }
+    .how-to-use .how-to-use-container  .content .card{
+        width:180px;
+        padding-bottom: 8px;
+    }
+    .how-to-use .how-to-use-container  .content .card img{
+        width:180px;
+        height:180px;
+        margin-bottom: 6px;
+    }
+    .how-to-use .how-to-use-container  .content .card h5{
+        font-size: 1.2rem;
+        margin-bottom: 0px;
+    }
+    .how-to-use .how-to-use-container  .content .card p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .how-to-use .how-to-use-container .order-btn a{
+        padding: 4px 48px;
+        font-size: 1.2rem;
+       
+    }
+}
+@media (max-width:580px) {
+
+    .how-to-use .how-to-use-container .section-header h4{
+        font-size: 2rem;    
+        margin-bottom: 50px;
+    }
+    .how-to-use .how-to-use-container  .content{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .how-to-use .how-to-use-container  .content{
+        width: 100%;
+
+    }
+    .how-to-use .how-to-use-container  .content .card{
+        width:280px;
+        padding-bottom: 35px;
+    }
+    .how-to-use .how-to-use-container  .content .card img{
+        width:280px;
+        height:280px;
+        margin-bottom: 6px;
+    }
+    .how-to-use .how-to-use-container  .content .card h5{
+        font-size: 1.4rem;
+        margin-bottom: 0px;
+    }
+    .how-to-use .how-to-use-container  .content .card p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .how-to-use .how-to-use-container .order-btn a{
+        padding: 4px 48px;
+        font-size: 1.2rem;
+       
+    }
+}
+@media (max-width:340px) {
+
+    .how-to-use .how-to-use-container .section-header h4{
+        font-size: 1.8rem;    
+    }
+    .how-to-use .how-to-use-container  .content .card{
+        width:250px;
+    }
+    .how-to-use .how-to-use-container  .content .card img{
+        width:250px;
+        height:250px;
+        margin-bottom: 6px;
+    }
+    .how-to-use .how-to-use-container  .content .card h5{
+        font-size: 1.3rem;
+        margin-bottom: 0px;
+    }
+    .how-to-use .how-to-use-container .order-btn a{
+        padding: 2px 42px;
+        font-size: 1.2rem;
+       
+    }
+}
+/* HOW TO USE SECTION STYLING END */
+/* ---------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------- */
+/* ABOUT SECTION STYLING START */
+.about{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.about .about-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .about-container .section-header h4{
+    font-size: 2.3rem;    
+    margin-bottom: 10px;
+}
+.about .about-container .content{
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.about .about-container .content .r{
+    width: 45%;
+    overflow: hidden;
+}
+.about .about-container .content .r img{
+      height: 300px;
+}
+.about .about-container .content .l{
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 15px;
+}
+.about .about-container .content .l h6{
+    text-align: end;
+    font-size: 1.45rem;
+    color: rgb(27, 105, 48);
+}
+.about .about-container .content .l p{
+    text-align: end;
+    font-size: 1.2rem;
+}
+.about .about-container  .order-btn{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.about .about-container  .order-btn a{ 
+    padding: 4px 48px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border:solid 2px black;
+    transition: all 0.3s ease;
+}
+.about .about-container  .order-btn a:hover{ 
+    background-color: transparent;
+    color: black;
+}
+@media (max-width:900px) {
+    .about .about-container .section-header h4{
+        font-size: 2.3rem;    
+    }
+    .about .about-container .content .r{
+        width: 45%;
+        overflow: hidden;
+    }
+    .about .about-container .content .r img{
+          height: 280px;
+    }
+    .about .about-container .content .l{
+        width: 54%;
+    }
+    .about .about-container .content .l h6{
+        text-align: end;
+        font-size: 1.45rem;
+    }
+    .about .about-container .content .l p{
+        text-align: end;
+        font-size: 1.1rem;
+    }
+ 
+}
+@media (max-width:750px) {
+    .about .about-container .section-header h4{
+        font-size: 2.2rem;    
+    }
+    .about .about-container .content .l{
+        padding-right: 5px;
+    }
+    .about .about-container .content .l h6{
+        text-align: end;
+        font-size: 1.2rem;
+    }
+    .about .about-container .content .l p{
+        text-align: end;
+        font-size: 1rem;
+    }
+    .about .about-container .content .r img{
+        height: 230px;
+  }
+}
+@media (max-width:660px) {
+    .about .about-container .content .l{
+        padding-right: 5px;
+    }
+    .about .about-container .content .l h6{
+        text-align: end;
+        font-size: 1.1rem;
+    }
+    .about .about-container .content .l p{
+        text-align: end;
+        font-size: 0.87rem;
+    }
+    .about .about-container .content .l{
+        width: 55%;
+    }
+    .about .about-container .content .r{
+        width: 43%;
+    }
+    .about .about-container .content .r img{
+        height: 200px;
+  }
+  .about .about-container  .order-btn a{ 
+    padding: 2px 44px;
+    font-size: 1.15rem
+    ;
+}
+}
+@media (max-width:580px) {
+
+    .about .about-container .section-header h4{
+        font-size: 2rem;     
+    }
+    .about .about-container .content{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .about .about-container .content .r{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    .about .about-container .content .r img{
+          height: auto;
+          width: 80%;
+    }
+    .about .about-container .content .l{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 20px;
+        padding-left: 5px;
+    }
+    .about .about-container .content .l h6{
+        text-align: end;
+        font-size: 1.35rem;
+        color: rgb(27, 105, 48);
+    }
+    .about .about-container .content .l p{
+        text-align: end;
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:380px) {
+
+    .about .about-container .content .r img{
+        height: auto;
+        width: 90%;
+    }
+    .about .about-container .content .l{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 12px;
+        padding-left: 5px;
+    }
+    .about .about-container .content .l h6{
+        text-align: end;
+        font-size: 1.25rem;
+        color: rgb(27, 105, 48);
+    }
+    .about .about-container .content .l p{
+        text-align: end;
+        font-size: 1.05rem;
+    }
+    
+}
+@media (max-width:340px) {
+
+    .about .about-container .section-header h4{
+        font-size: 1.8rem;    
+    }
+}
+/* ABOUT SECTION STYLING END */
+/* ---------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------- */
+/* ORDERS SECTION STYLING START */
+.order{
+    width:100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.order .order-container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.order .order-container .section-header h4{
+    font-size: 2.3rem;    
+    margin-bottom: 10px;
+}
+.order .order-container form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding:0 20px;
+}
+.order .order-container form .line1,
+.order .order-container form .line2{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.order .order-container form .line3{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.order .order-container form .line3 button{
+    padding: 3px 60px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border:solid 2px black;
+    transition: all 0.3s ease;
+}
+.order .order-container form .line3 button:hover{
+    background-color: transparent;
+    color: black;
+}
+.order .order-container form .line1 input,
+.order .order-container form .line2 input{
+    width: 48%;
+    margin:0 30px;
+    height: 32px;
+    border-radius: 5px;
+    border: solid 1px black;
+    padding-right: 5px;
+    text-align: end;
+    font-size: 1.1rem;
+}
+@media (max-width:1000px) {
+.order .order-container form .line1,
+.order .order-container form .line2{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+}
+@media (max-width:700px) {
+.order .order-container form .line1,
+.order .order-container form .line2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.order .order-container form .line1 input,
+.order .order-container form .line2 input{
+    width: 48%;
+    margin:0 15px;
+}
+}
+@media (max-width:500px) {
+.order .order-container form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding:0 5px;
+}
+}
+@media (max-width:450px) {
+.order .order-container form .line1,
+.order .order-container form .line2{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}    
+.order .order-container form .line1 input,
+.order .order-container form .line2 input{
+    width: 80%;
+    margin:10px 0px;
+}
+}
+@media (max-width:370px) {
+.order .order-container form .line3 button{
+    padding: 2px 40px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border:solid 2px black;
+    transition: all 0.3s ease;
+}    
+}
+@media (max-width:750px) {
+.order .order-container .section-header h4{
+    font-size: 2.2rem;    
+}
+}
+@media (max-width:580px) {
+.order .order-container .section-header h4{
+    font-size: 2rem;     
+}
+}
+@media (max-width:340px) {
+.order .order-container .section-header h4{
+    font-size: 1.8rem;    
+}
+}
+
+/*  ORDER  PAGE STYLING END */
+/* ---------------------------------------------------------------- */
+
+
+
+
+
+
+footer{
+    width: 100%;
+    height: 70px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer span{
+    margin:0 10px;
+    width: 1px ;
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+}
+footer p{
+    font-size: 1rem;
+}
+footer p a{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+@media (max-width:500px) {
+    footer{
+        height: 55px;
+        margin-top: 50px;
+    }
+    
+    footer p{
+        font-size: 0.9rem;
+    }
+
+}
+@media (max-width:440px) {
+    footer{
+        height: 75px;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    
+    footer p{
+        font-size: 0.9rem;
+    }
+    footer span{
+        margin:0 10px;
+        width: 1px ;
+        height: 25px;
+        background-color: rgb(0, 0, 0);
+        display: none;
+    }
+}
